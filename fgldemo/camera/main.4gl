@@ -173,7 +173,6 @@ END FUNCTION
 
 FUNCTION displayPhoto()
   DEFINE whs STRING
-  CALL fgl_winmessage("1",resultset.json_metadata,"ok")
   LET resultset.json_metadata=replace_char(resultset.json_metadata,
                                                    '"{TIFF}"','"TIFF"')
   INITIALIZE exif.* TO NULL
